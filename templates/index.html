@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>      
+        <u><h1><center>stock price predictor</center> </h1></u>
+
+        {% if result %}
+            <p><center>{{ result }}</center></p>
+        {% endif %}
+
+        <form method="post" action="/predict">
+            <center><label>open price</label></center><br>
+            <center><input type="text" name="open price"></center><br><br>
+
+            <center><input type="submit" value="predictor"></center>
+
+        </form>
+
+    </body>
+</html>
